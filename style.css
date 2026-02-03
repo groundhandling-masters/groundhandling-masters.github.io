@@ -224,6 +224,73 @@ body {
     line-height: 1.6;
 }
 
+/* Testimonials Section */
+.testimonials {
+    padding: 5rem 0;
+    background: var(--bg-white);
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stars {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #fbbf24;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonial-author {
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.testimonial-author strong {
+    display: block;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.testimonial-course {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
 /* Courses Section */
 .courses {
     padding: 5rem 0;
@@ -424,6 +491,26 @@ body {
     }
 
     .hero-content {
+        margin: 40vh 15px 0;
+        padding: 2rem 1.5rem;
+    }
+
+    .testimonials h2,
+    .about h2,
+    .courses h2,
+    .signup h2 {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-slogan {
+        font-size: 1.4rem;
+    }
+
+    .hero-content {
         margin: 70vh 15px 0;
         padding: 2rem 1.5rem;
     }
@@ -490,5 +577,14 @@ body {
     .feature,
     .course-card {
         padding: 1rem;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .testimonial {
+        padding: 1.5rem;
     }
 }
